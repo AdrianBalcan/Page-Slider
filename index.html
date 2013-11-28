@@ -1,0 +1,28 @@
+<html ng-app="swipe" ng-controller="MainCtrl">
+<head>
+    <title>Collectin</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/pageslider.css">
+<script src="js/angular.min.js"></script>
+</head>
+
+<body ng-swipe-right="go()">
+<div id="container"></div>
+
+<script src="js/angular-touch.min.js"></script>
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/leaflet.js"></script>
+<script src="js/pageslider.js"></script>
+<script src="app.js"></script>
+  <script>
+   var app = angular.module('swipe', ['ngTouch']);
+  app.controller('MainCtrl', function($scope) {
+  $scope.go = function() {
+    window.location.href="#";
+  }
+});
+</script>
+
+
+</body>
+</html>
